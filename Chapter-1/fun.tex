@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\section*{Exercise 1.3}
+
+\textbf{1.} Let $ f: \{1,3,4\} \to \{1,2,5\} $ and $ g: \{1,2,5\} \to \{1,3\} $ be given by:
+\[
+f = \{(1,2), (3,5), (4,1)\}, \quad g = \{(1,3), (2,3), (5,1)\}
+\]
+Write down $g \circ f$.
+
+\textbf{2.} Let $ f, g, h $ be functions from $ \mathbb{R} $ to $ \mathbb{R} $. Show that:
+\[
+(f + g) \circ h = f \circ h + g \circ h
+\]
+\[
+(f \cdot g) \circ h = (f \circ h) \cdot (g \circ h)
+\]
+
+\textbf{3.} Find $ g \circ f $ and $ f \circ g $ if:
+\begin{itemize}
+    \item[(i)] $ f(x) = |x| $, $ g(x) = |5x - 2| $
+    \item[(ii)] $ f(x) = 8x^3 $, $ g(x) = \frac{1}{x^3} $
+\end{itemize}
+
+\textbf{4.} If $ f(x) = \frac{4x+3}{6x-4} $, $ x \neq \frac{2}{3} $, show that $ f \circ f (x) = x $.
+
+\textbf{5.} Determine whether the following functions have an inverse:
+\begin{itemize}
+    \item[(i)] $ f: \{1,2,3,4\} \to \{10\} $ with $ f = \{(1,10), (2,10), (3,10), (4,10)\} $
+    \item[(ii)] $ g: \{5,6,7,8\} \to \{1,2,3,4\} $ with $ g = \{(5,4), (6,3), (7,4), (8,2)\} $
+    \item[(iii)] $ h: \{2,3,4,5\} \to \{7,9,11,13\} $ with $ h = \{(2,7), (3,9), (4,11), (5,13)\} $
+\end{itemize}
+
+\textbf{6.} Show that $ f: [-1,1] \to \mathbb{R} $, given by $ f(x) = \frac{x}{x+2} $, is one-one. Find the inverse of the function $ f: [-1,1] \to \text{Range } f $.
+(Hint: For $ y \in \text{Range } f $, solve $ y = \frac{x}{x+2} $ for $ x $, i.e., $ x = \frac{2y}{1-y} $)
+
+\textbf{7.} Consider $ f: \mathbb{R} \to \mathbb{R} $ given by $ f(x) = 4x + 3 $. Show that $ f $ is invertible. Find the inverse of $ f $.
+
+\textbf{8.} Consider $ f: \mathbb{R}_+ \to [4, \infty) $ given by $ f(x) = x^2 + 4 $. Show that $ f $ is invertible with the inverse $ f^{-1} $ of $ f $ given by $ f^{-1}(y) = \sqrt{y-4} $, where $ \mathbb{R}_+ $ is the set of all non-negative real numbers.
+
+\newpage
+\textbf{9.} Consider $ f: \mathbb{R}_+ \to [-5, \infty) $ given by $ f(x) = 9x^2 + 6x - 5 $. Show that $ f $ is invertible with:
+\[
+f^{-1}(y) = \frac{\sqrt{y+6} -1}{3}
+\]
+
+\textbf{10.} Let $ f: X \to Y $ be an invertible function. Show that $ f $ has a unique inverse. 
+(Hint: Suppose $ g_1 $ and $ g_2 $ are two inverses of $ f $. Then for all $ y \in Y $, 
+$ f \circ g_1(y) = 1_Y(y) = f \circ g_2(y) $. Use the one-one property of $ f $.)
+
+\textbf{11.} Consider $ f: \{1,2,3\} \to \{a,b,c\} $ given by $ f(1) = a, f(2) = b, f(3) = c $. Find $ f^{-1} $ and show that $ (f^{-1})^{-1} = f $.
+
+\textbf{12.} Let $ f: X \to Y $ be an invertible function. Show that the inverse of $ f^{-1} $ is $ f $, i.e., $ (f^{-1})^{-1} = f $.
+
+\textbf{13.} If $ f: \mathbb{R} \to \mathbb{R} $ be given by $ f(x) = (3 - x^3)^{1/3} $, then $ f \circ f(x) $ is:
+\[
+\text{(A) } \frac{1}{x^3} \quad \text{(B) } x^3 \quad \text{(C) } x \quad \text{(D) } (3 - x^3)
+\]
+
+\textbf{14.} Let $ f: \mathbb{R} - \left\{ -\frac{4}{3} \right\} \to \mathbb{R} $ be a function defined as $ f(x) = \frac{4x}{3x+4} $. The inverse of $ f $ is the map $ g: \text{Range } f \to \mathbb{R} - \left\{ -\frac{4}{3} \right\} $ given by:
+
+\[
+\text{(A) } g(y) = \frac{3y}{3 - 4y} \quad
+\text{(B) } g(y) = \frac{4y}{4 - 3y} \quad
+\text{(C) } g(y) = \frac{4y}{3 - 4y} \quad
+\text{(D) } g(y) = \frac{3y}{4 - 3y}
+\]
+
+\end{document}
+
