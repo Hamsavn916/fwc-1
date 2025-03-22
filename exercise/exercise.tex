@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
+\begin{document}
+
+\lstset{
+  frame=single,
+  breaklines=true
+}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textcolor{blue}{\large \textbf{CHAPTER-1 \\ RELATIONS AND FUNCTIONS}}
+\end{center}
+\vspace{0.5cm}
+\begin{center}
+\textcolor{blue}{\Large \textbf{EXERCISE - 1.3}}
+\end{center}
+\vspace{0.3cm}
+\renewcommand\theenumi{\textcolor{blue}{\textbf{\arabic{enumi}}}} 
+\begin{enumerate}
+    \item Let f:\{1, 3, 4\}→ \{1, 2, 5\} and g: \{1, 2, 5\}→ \{1, 3\} be given by \\
+    $f= \{(1,2), (3,5), (4,1)\} and g = \{(1,3), (2,3), (5,1)\}$.Write down gof.
+\item Let $f, g,$ and $h$ be functions from $\textbf{R} $to$ \textbf{R}$.Show that
+\begin{center}
+    $(f + g)oh = foh + goh$
+\end{center}
+\begin{center}
+    $(f . g)oh = (foh) . (goh)$
+\end{center}
+\item Find gof and fog,if
+\par\hspace{0.5cm}(i)\(f(x)=|x|\) and \(g(x)=|5x-2|\)
+\vspace{0.01cm}
+\newline
+\par\hspace{0.5cm}(ii)\f(x)=8$x^{3}\) and \(g(x)=x^\frac{1}{3}\)
+\item If \( f(x)=\frac{4x+3}{6x-4}, \( x \neq \frac{2}{3} \), show that \( fof (x) = x \), for all \( x \neq \frac{2}{3} \). What is the inverse of \( f \)?\)
+
+\item State with reason whether the following functions have an inverse.
+\par\hspace{0.5cm}(i) \( f: \{1, 2, 3, 4\} \to \{10\} \) with
+\par\hspace{1cm}\( f = \{(1, 10), (2, 10), (3, 10), (4, 10)\} \)  
+\par\hspace{0.5cm}(ii) \( g: \{5, 6, 7, 8\} \to \{1, 2, 3, 4\} \) with  
+\par\hspace{1.1cm}\( g = \{(5, 4), (6, 3), (7, 4), (8, 2)\} \)  
+\par\hspace{0.5cm}(iii) \( h: \{2, 3, 4, 5\} \to \{7, 9, 11, 13\} \) with  
+\par\hspace{1.1cm}\( h = \{(2, 7), (3, 9), (4, 1), (5, 13)\} \)  
+\item Show that\( f: [-1,1] \to \textbf{R}\),given by\( f(x)=\frac{x}{(x+2)}\),is one-one.Find the inverse of the function \( f: [-1,1] \to \text{Range } f \).
+\newline
+(Hint: For \( y \in \Range } f\), solve \( y =\frac{x}{x+2}\) for some \( x \) in \([-1,1]\), i.e.,\(x=\frac{2y}{1-y} \)).
+\item Consider f: \textbf{R}→\textbf{R} given by f(x) = 4x+3.Show that f is invertible.Find the inverse of f.
+\item Consider$f:\textbf{R}_+\to [4,\infty)$ given by $f(x)=x^2+4$.Show that $f$ is invertible with the inverse of \(f^{-1}(y)\)=\sqrt{y-4},where $ \textbf{R}_+$ is the set of all non-negative real numbers.
+\begin{document}
+\item Consider$f:\textbf{R}_+\to[-5,\infty)$given by $ f(x) = 9x^2 + 6x - 5 $.Show that $ f $ is invertible 
+\newline
+with:f^{-1}(y) = (\frac{(\sqrt({y+6}) -1}{3})
+
+\newline
+\end{flushcenter}
+\item Let $ f: X \to Y $ be an invertible function.Show that $ f $ has a unique inverse. 
+\newline
+(Hint: Suppose $g_1$ and $ g_2 $ are two inverses of $f$.Then for all $ y \in Y $, $ fog_1(y) = 1_Y(y) = fo g_2(y) $.) Use one-one ness of f).}
+\item Consider $f:\{1,2,3\}\to\{a,b,c\}$ given by f(1)=a, f(2)=b and f(3)=c. Find 
+\newline
+$ f^{-1} $ and show that $ (f^{-1})^{-1} = f $.
+\item Let$f:X\to Y$be an invertible function.Show that the inverse of $f^{-1}$ is $f$, i.e.,$ (f^{-1})^{-1} = f $.
+\item If $ f: \textbf{R} \to \textbf{R} $ is given by $ f(x) = (3-x^3)^{\frac{1}{3}} $, then $ fof(x) $ is
+\vspace{0.1cm}
+\par\hspace{0.1cm}
+\newline
+(A)$ x^{\frac{1}{3}}
+\hspace{2cm}
+(B)$ x^3 $
+\hspace{2cm}}
+(C)x
+\hspace{2cm}}
+(D)$ (3 - x^3) $
+\item Let f: \textbf{R} - \left\{ -\frac{4}{3} \right\} \) be a function defined as: \(f(x)=\frac{4x}{3x+4}\). The inverse of
+\vspace{0.5cm}
+\newline
+$f$ is the map \( g: Range f \to \textbf{R} - \left\{ -\frac{4}{3} \right\} \) given by
+\vspace{0.5cm}
+\newline
+(A) $ g(y) = \frac{3y}{3 - 4y} $ 
+\hspace{3cm}
+(B) $ g(y) = \frac{4y}{4 - 3y}$
+\newline
+\newline
+\newline
+(C) $ g(y) = \frac{4y}{3 - 4y} $
+\hspace{3cm}
+(D) $ g(y) = \frac{3y}{4 - 3y} $
+\end{enumerate}
+\end{document}
